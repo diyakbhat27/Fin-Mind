@@ -1,0 +1,152 @@
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: var(--color-bg-base);
+  background-image: 
+    radial-gradient(circle at 15% 50%, rgba(30, 30, 30, 0.4) 0%, transparent 50%),
+    radial-gradient(circle at 85% 30%, rgba(40, 40, 40, 0.3) 0%, transparent 50%);
+}
+
+.login-box {
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.login-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.login-icon {
+  color: var(--color-text-primary);
+  opacity: 0.9;
+}
+
+.login-header h1 {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.login-subtitle {
+  color: var(--color-text-secondary);
+  font-size: 14px;
+}
+
+.login-error {
+  background-color: rgba(255, 74, 74, 0.1);
+  border: 1px solid var(--color-error);
+  color: var(--color-error);
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  text-align: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-group:focus-within {
+  border-color: var(--color-text-primary);
+  box-shadow: 0 0 0 1px var(--color-text-primary);
+}
+
+.input-icon {
+  position: absolute;
+  left: 14px;
+  color: var(--color-text-muted);
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px 14px 14px 44px;
+  font-size: 15px;
+}
+
+.input-group input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.role-group {
+  flex-direction: column;
+  align-items: flex-start;
+  background: transparent;
+  border: none;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.role-group:focus-within {
+  box-shadow: none;
+}
+
+.role-group label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+.role-group select {
+  width: 100%;
+  padding: 12px;
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  color: var(--color-text-primary);
+  cursor: pointer;
+  appearance: none;
+}
+
+.role-group select:focus {
+  border-color: var(--color-text-primary);
+}
+
+.login-button {
+  margin-top: 16px;
+  background-color: var(--color-text-primary);
+  color: var(--color-bg-base);
+  padding: 14px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: transform 0.1s, opacity 0.2s;
+}
+
+.login-button:hover {
+  opacity: 0.9;
+}
+
+.login-button:active {
+  transform: scale(0.98);
+}

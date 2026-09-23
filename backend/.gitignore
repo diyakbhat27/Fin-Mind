@@ -1,0 +1,10 @@
+.env
+.env.*
+!.env.example
+venv/
+.venv/
+__pycache__/
+*.sqlite
+*.sqlite3
+chroma_data/
+test_chroma_data/
